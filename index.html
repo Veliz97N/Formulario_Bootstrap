@@ -17,7 +17,7 @@
 <body>
   <div class="container my-3 border border-dark rounded overflow-hidden">
     <form>
-      <div class="row bg-info px-3 py-1 mb-5">
+      <div id="header" class="row px-3 py-1 mb-5 border-bottom border-dark">
         <h4>Payment form example</h4>
       </div>
       <div class="form-row">
@@ -77,7 +77,7 @@
         <!--Inicio Cuarta Fila-->
         <div class="form-group col-md-6">
           <legend class="col-form-label mb-3 ">We accept: </legend>
-          <div class="paymentMethod bg-dark p-2 border rounded w-65" id="paymentMethod">
+          <div class="paymentMethod bg-dark p-2 border rounded" id="paymentMethod">
             <input class="form-radio-input" type="radio" id="check_paymentMethod_Mastercard" name="radio_payment">
             <i class="fab fa-cc-mastercard text-white fa-2x"></i>
             <input class="form-radio-input ml-3" type="radio" id="check_paymentMethod_Visa" name="radio_payment">
@@ -94,7 +94,7 @@
         </div>
       </div>
       <!--Fin Cuarta Fila-->
-      <div class="row bg-light py-3">
+      <div class="row bg-light py-3 border-top border-dark">
         <!--Inicio Quinta Fila-->
         <div class="col-md-12 ">
           <button type="submit" class="btn btn-primary float-right ml-1">Send</button>
