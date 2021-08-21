@@ -16,7 +16,7 @@
 
 <body>
   <div class="container my-3 border border-dark rounded overflow-hidden">
-    <form>
+    <form id="formulario" method="GET">
       <div id="header" class="row px-3 py-1 mb-5 border-bottom border-dark">
         <h4>Payment form example</h4>
       </div>
@@ -68,7 +68,7 @@
           </select>
         </div>
         <div class="form-group col-md-2">
-          <label for="inputPostalCode">PostalCode</label>
+          <label for="inputPostalCode">Postal Code</label>
           <input type="number" class="form-control" id="inputPostalCode">
         </div>
       </div>
@@ -97,12 +97,13 @@
       <div class="row bg-light py-3 border-top border-dark">
         <!--Inicio Quinta Fila-->
         <div class="col-md-12 ">
-          <button type="submit" class="btn btn-primary float-right ml-1">Send</button>
+          <button id="submit" type="submit" class="btn btn-primary float-right ml-1">Send</button>
           <button type="reset" class="btn btn-secondary float-right">Cancel</button>
         </div>
         <!--Fin Quinta Fila-->
       </div>
     </form>
   </div>
+  <script src="/module.js"></script>
 </body>
 </html>
