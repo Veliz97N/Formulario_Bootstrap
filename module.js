@@ -39,8 +39,9 @@ function Restart(){
     postalCode.style.backgroundColor = "white";
     invalidPostcalCode.style.visibility="hidden"; //Fin Postal Code
     message.style.backgroundColor = "white";
-    invalidMessage.style.visibility="hidden"; //Fin Message
-    paymentMethod.style.background="black";
+    invalidMessage.innerHTML="Add any notes here.";
+    invalidMessage.style.color="black"; //Fin Message
+    paymentMethod.style.background="#5d6a61";
     invalidPaymentMethod.style.visibility="hidden";
 };
 function Verificar_RadioButton(){
@@ -120,7 +121,7 @@ formulario.addEventListener("submit", (e) => {
         state.style.backgroundColor="red";
         invalidState.style.visibility="visible";
     }  
-                else{
+    else{
         state.style.backgroundColor = "white";
         invalidState.style.visibility="hidden"; 
     }
@@ -136,17 +137,21 @@ formulario.addEventListener("submit", (e) => {
     if(message.value==""||message.value==null){
         e.preventDefault();
         message.style.backgroundColor="red";
+        invalidMessage.innerHTML="Please provide a valid Message.";
+        invalidMessage.style.color="#dc3545";
         invalidMessage.style.visibility="visible";
     }
     else{
         message.style.backgroundColor = "white";
-        invalidMessage.style.visibility="hidden"; 
+        invalidMessage.innerHTML="Add any notes here.";
+        invalidMessage.style.color="black"; //Fin Message
     }    
     if(Verificar_RadioButton()){
         paymentMethod.style.backgroundColor = "white";
         invalidPaymentMethod.style.visibility="hidden";
     }
     else{
+        e.preventDefault();
         paymentMethod.style.backgroundColor = "red";
         invalidPaymentMethod.style.visibility="visible";
     }

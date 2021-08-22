@@ -3,7 +3,14 @@
 }
 #paymentMethod{
     width: 310px;
-    background-color: black;
+    background-color: #5d6a61;
+}
+#footer{
+    background-color: #e9e9f8 ;
+}
+#invalid-Message{
+    visibility: visible;
+    color:black;
 }
 .feedback{
     display: inline-block;
