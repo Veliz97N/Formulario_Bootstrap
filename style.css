@@ -1,6 +1,9 @@
 #header{
     background-color: #b4d8ff;
 }
+#inputAmount{
+    width: 330px;
+}
 #paymentMethod{
     width: 310px;
     background-color: #5d6a61;
