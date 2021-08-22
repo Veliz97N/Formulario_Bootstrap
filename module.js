@@ -17,7 +17,8 @@ const postalCode = document.getElementById("inputPostalCode");
 const invalidPostcalCode=document.getElementById("invalid-PostalCode");
 const message = document.getElementById("inputMessage");
 const invalidMessage=document.getElementById("invalid-Message");
-const paymentMethod= document.getElementsById("paymentMethod"); //ACA VA PAYMENT METHOD
+const paymentMethod= document.getElementById("paymentMethod"); //ACA VA PAYMENT METHOD
+const invalidPaymentMethod=document.getElementById("invalid-PaymentMethod");
 const cancel=document.getElementById("Cancel");
 
 function Restart(){
@@ -39,6 +40,8 @@ function Restart(){
     invalidPostcalCode.style.visibility="hidden"; //Fin Postal Code
     message.style.backgroundColor = "white";
     invalidMessage.style.visibility="hidden"; //Fin Message
+    paymentMethod.style.background="black";
+    invalidPaymentMethod.style.visibility="hidden";
 };
 function Verificar_RadioButton(){
     let verificar=null;
@@ -46,7 +49,7 @@ function Verificar_RadioButton(){
     for(let x=0;x<metodos_pago.length;x++){
         if(metodos_pago[x].checked){
             verificar=true;
-            break;
+            break;            
         }
         else{
             verificar=false;
@@ -57,6 +60,7 @@ function Verificar_RadioButton(){
 
 
 formulario.addEventListener("submit", (e) => {
+    
     if (card.value == "" || card.value == null || card.value.length < 16) {
         e.preventDefault();
         card.style.backgroundColor = "red";
@@ -138,6 +142,14 @@ formulario.addEventListener("submit", (e) => {
         message.style.backgroundColor = "white";
         invalidMessage.style.visibility="hidden"; 
     }    
+    if(Verificar_RadioButton()){
+        paymentMethod.style.backgroundColor = "white";
+        invalidPaymentMethod.style.visibility="hidden";
+    }
+    else{
+        paymentMethod.style.backgroundColor = "red";
+        invalidPaymentMethod.style.visibility="visible";
+    }
 });
 
 cancel.addEventListener("click",()=>{

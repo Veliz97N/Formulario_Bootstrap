@@ -3,6 +3,7 @@
 }
 #paymentMethod{
     width: 310px;
+    background-color: black;
 }
 .feedback{
     display: inline-block;
