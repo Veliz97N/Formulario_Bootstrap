@@ -17,8 +17,13 @@
 <body>
   <div class="container my-3 border border-dark rounded overflow-hidden">
     <form id="formulario">
-      <div id="header" class="row px-3 py-1 mb-5 border-bottom border-dark">
+      <div id="header" class="row px-3 py-2 mb-4 border-bottom border-dark">
         <h4>Payment form example</h4>
+      </div>
+      <div class="form-row d-flex justify-content-center">
+        <div id= "aviso" class="col-12 py-3 px-4 mb-4 h6 text-danger">
+          Some fields are missing
+        </div>
       </div>
       <div class="form-row">
         <!--Primera Fila Contiene Card, CVC# and Amount-->
@@ -89,15 +94,14 @@
           <legend class="col-form-label mb-3 ">We accept: </legend>
           <div class="paymentMethod p-2 border rounded" id="paymentMethod">
             <input class="form-radio-input" type="radio" id="check_paymentMethod_Mastercard" name="radio_payment">
-            <i class="fab fa-cc-mastercard text-white fa-2x"></i>
+            <i class="fab fa-cc-mastercard text-white fa-1x"></i>
             <input class="form-radio-input ml-3" type="radio" id="check_paymentMethod_Visa" name="radio_payment">
-            <i class="fab fa-cc-visa text-white fa-2x"></i>
+            <i class="fab fa-cc-visa text-white fa-1x"></i>
             <input class="form-radio-input ml-3" type="radio" id="check_paymentMethod" name="radio_payment">
-            <i class="fab fa-cc-diners-club fa-2x text-white"></i>
+            <i class="fab fa-cc-diners-club fa-1x text-white"></i>
             <input class="form-radio-input ml-3 " type="radio" id="check_paymentMethod_express" name="radio_payment">
-            <i class="fab fa-cc-amex fa-2x text-white mr-3"></i>
+            <i class="fab fa-cc-amex fa-1x text-white mr-3"></i>
           </div>
-          <div id="invalid-PaymentMethod" class="feedback">Please provide a valid Payment Method.</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputMessage">Message</label>

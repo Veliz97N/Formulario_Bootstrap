@@ -1,17 +1,23 @@
 #header{
-    background-color: #b4d8ff;
+    background-color: #f7f7f7;
 }
 #inputAmount{
     width: 330px;
 }
 #paymentMethod{
-    width: 310px;
+    width: 240px;
     background-color: #5d6a61;
 }
 #footer{
-    background-color: #e9e9f8 ;
+    background-color: #f7f7f7 ;
 }
 #invalid-Message{
     visibility: visible;
     color:black;
+}
+#aviso{
+    background: #f8d7da;
+    border-radius: 3px;
+   
+    
 }
